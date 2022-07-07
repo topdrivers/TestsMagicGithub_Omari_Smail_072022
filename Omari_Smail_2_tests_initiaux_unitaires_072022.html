@@ -2,7 +2,7 @@
 <html xmlns:str="http://exslt.org/strings" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Test Results &mdash; UserListInstrumented...</title>
+        <title>Test Results &mdash; UserRepositoryTest</title>
         <style type="text/css">
           html {
             height: 100%
@@ -572,9 +572,9 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">938 ms</div>
+                <div class="time" xmlns="">34 ms</div>
                 <h1>
-                    UserListInstrumented...: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">1 total, </span><span class="failed">1 failed</span></strong>
+                    UserRepositoryTest: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">3 total, </span><span class="passed">3 passed</span></strong>
                 </h1>
                 <div id="treecontrol">
                     <ul>
@@ -591,20 +591,25 @@ jQuery.cookie = function(name, value, options) {
             </div>
             <div id="content">
                 <ul id="tree">
-                    <li xmlns="" class="level top failed open">
+                    <li xmlns="" class="level top open">
                         <span><em class="time">
-                                <div class="time">938 ms</div>
-                            </em>com.openclassrooms.magicgithub.UserListInstrumentedTest</span>
+                                <div class="time">34 ms</div>
+                            </em>com.openclassrooms.magicgithub.UserRepositoryTest</span>
                         <ul>
-                            <li class="level test failed open">
+                            <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">938 ms</div>
-                                    </em><em class="status">failed</em>checkIfRemovingUserIsWorking</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException: Attempt to invoke interface method 'int java.util.List.size()' on a null object reference<br/>	at com.openclassrooms.magicgithub.utils.UserDiffCallback.getNewListSize(UserDiffCallback.java:25)<br/>	at androidx.recyclerview.widget.DiffUtil.calculateDiff(DiffUtil.java:125)<br/>	at androidx.recyclerview.widget.DiffUtil.calculateDiff(DiffUtil.java:106)<br/>	at com.openclassrooms.magicgithub.ui.user_list.UserListAdapter.updateList(UserListAdapter.java:53)<br/>	at com.openclassrooms.magicgithub.ui.user_list.ListUserActivity.loadData(ListUserActivity.java:56)<br/>	at com.openclassrooms.magicgithub.ui.user_list.ListUserActivity.onResume(ListUserActivity.java:36)<br/>	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1456)<br/>	at androidx.test.runner.MonitoringInstrumentation.callActivityOnResume(MonitoringInstrumentation.java:762)<br/>	at android.app.Activity.performResume(Activity.java:8344)<br/>	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:4854)<br/>	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:4901)<br/>	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:52)<br/>	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:176)<br/>	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:97)<br/>	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2307)<br/>	at android.os.Handler.dispatchMessage(Handler.java:106)<br/>	at android.os.Looper.loop(Looper.java:246)<br/>	at android.app.ActivityThread.main(ActivityThread.java:8512)<br/>	at java.lang.reflect.Method.invoke(Native Method)<br/>	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:602)<br/>	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1139)<br/></span>
-                                    </li>
-                                </ul>
+                                        <div class="time">14 ms</div>
+                                    </em><em class="status">passed</em>generateRandomUserWithSuccess</span>
+                            </li>
+                            <li class="level test">
+                                <span><em class="time">
+                                        <div class="time">13 ms</div>
+                                    </em><em class="status">passed</em>getUsersWithSuccess</span>
+                            </li>
+                            <li class="level test">
+                                <span><em class="time">
+                                        <div class="time">7 ms</div>
+                                    </em><em class="status">passed</em>deleteUserWithSuccess</span>
                             </li>
                         </ul>
                     </li>
@@ -612,7 +617,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by Android Studio on </p>
+            <p>Generated by Android Studio on 07/07/2022 15:48</p>
         </div>
     </body>
 </html>
